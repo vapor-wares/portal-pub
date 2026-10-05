@@ -1,0 +1,42 @@
+{
+  "GatewayMountMapModel": "0.1.0",
+  "slug": "vapor-wares-pub-mount-map",
+  "title": "vapor-wares public arm mount map",
+  "arm": "pub",
+  "armRepo": "vapor-wares/portal-pub",
+  "description": "The mount map is the source of truth; submodules are an artifact of the mounts.",
+  "audience": "public",
+  "invariant": "Only public gitlinks and this contract live here.",
+  "defaults": {
+    "materialize": "pinned",
+    "shallow": false,
+    "ignore": "none",
+    "branch": "declared per mount, set to the remote's discovered default. Discovered, never assumed; declared so a remote changing its default fails loudly instead of silently moving us.",
+    "rationale": "A public arm records public mounts at their recorded gitlink so a snapshot replays exactly. The gateway above floats."
+  },
+  "mountCount": 2,
+  "mounts": [
+    {
+      "GatewayMountModel": "0.1.0",
+      "slug": "homebrew-apps",
+      "org": "vapor-wares",
+      "entry": "homebrew-apps",
+      "url": "https://github.com/vapor-wares/homebrew-apps.git",
+      "shallow": false,
+      "ignore": "none",
+      "provenance": "public",
+      "branch": "main"
+    },
+    {
+      "GatewayMountModel": "0.1.0",
+      "slug": "homebrew-tap",
+      "org": "vapor-wares",
+      "entry": "homebrew-tap",
+      "url": "https://github.com/vapor-wares/homebrew-tap.git",
+      "shallow": false,
+      "ignore": "none",
+      "provenance": "public",
+      "branch": "main"
+    }
+  ]
+}

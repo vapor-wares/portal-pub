@@ -1,0 +1,14 @@
+[submodule "homebrew-apps"]
+	path = homebrew-apps
+	url = ../homebrew-apps.git
+	branch = main
+	shallow = false
+	ignore = none
+	managedBy = kura-s/mounts
+[submodule "homebrew-tap"]
+	path = homebrew-tap
+	url = ../homebrew-tap.git
+	branch = main
+	shallow = false
+	ignore = none
+	managedBy = kura-s/mounts

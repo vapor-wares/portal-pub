@@ -1,0 +1,23 @@
+{
+  "BeadsIssue": "0.1.0",
+  "schemaVersion": "0.1.0",
+  "id": "MIGRATION-VAPOR-WARES-PUBLIC-ARM-HOMEBREW-2026-10-05",
+  "title": "Create the Vapor Wares public arm for Homebrew divisions",
+  "status": "in-progress",
+  "priority": 1,
+  "issueType": "migration",
+  "labels": [
+    "vapor-wares",
+    "public-arm",
+    "homebrew",
+    "double-gateway"
+  ],
+  "createdAt": "2026-10-05T08:35:00Z",
+  "createdBy": "codex",
+  "description": "Create a real pub arm for Vapor Wares and mount the public Homebrew app/tap repositories there instead of carrying public remotes inside the private p arm.",
+  "acceptanceCriteria": [
+    "gtwy/pub/vapor-wares is backed by vapor-wares/portal-pub.",
+    "homebrew-apps and homebrew-tap are mounted under gtwy/pub/vapor-wares.",
+    "The private p arm no longer declares public Homebrew remotes."
+  ]
+}
